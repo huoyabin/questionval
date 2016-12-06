@@ -34,10 +34,11 @@ module.exports={
         })
     ],//配置它的好处是:每次不用刷新页面,自动完成刷新
     devServer:{
-        contentBase:'html',  //本地服务器所加载的页面所在的目录
+        contentBase:'./html',  //本地服务器所加载的页面所在的目录
+        port:8081,          //设置默认监听端口,默认8080
         colors:true,   //终端中输出结果为彩色
         inline:true,    //实时刷新
-        historyApiFallback:true, //不跳转
-        port:8081		//设置默认监听端口,默认8080
+        historyApiFallback:true//不跳转
+
     }
 };
